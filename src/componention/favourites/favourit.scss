@@ -1,0 +1,19 @@
+.favo{
+    height: 100%;
+    // background-image: url("../../images/aaaaa.jpg");
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa{
+
+        h3{
+            text-align: center;
+            font-weight: 500;
+        }
+        img{
+            height:300px ;
+        }
+    }
+}

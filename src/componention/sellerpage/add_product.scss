@@ -1,0 +1,93 @@
+
+.seller{
+    background-color: rgb(250, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: justify;
+    // padding-left: 600px;
+    // padding-top:30px ;
+    height: 100vh;
+    padding: 30px 30px;
+    // gap: 100px;
+    // padding-left: 10px;
+
+    .out{
+           padding: 10px;
+           h3{
+            display: flex;
+            justify-content: center;
+           }
+
+        .in{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 100%;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: rgba(240, 245, 248, 0.796);
+            font-weight: 500;
+
+            .rname{
+                display: flex;
+                gap: 10px;
+                #rn{
+                    border-radius: 5px;
+                }
+            }
+            .pname{
+                display: flex;
+                gap: 10px;
+                #pn{
+                    border-radius: 5px;
+                }
+            }
+            .id{
+                display: flex;
+                gap: 10px;
+                #pid{
+                    border-radius: 5px;
+                }
+            }
+            .pdetails{
+                display: flex;
+                gap: 10px;
+                #pd{
+                    border-radius: 5px;
+                }
+            }
+            .price{
+                display: flex;
+                gap: 10px;
+                #pr{
+                    border-radius: 5px;
+                }
+            }
+            .stack{
+                display: flex;
+                gap: 10px;
+                #st{
+                    border-radius: 5px;
+                }
+            }
+            .but{
+                // padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                button{
+                    background-color: rgb(212, 219, 225);
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+
+                }
+                
+
+            }
+        }
+    }
+}

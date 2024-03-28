@@ -1,0 +1,31 @@
+
+.payment{
+    height: 100%;
+    // background-image: url("../../images/aaaaa.jpg");
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .pay{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        h4{
+            text-align: center;
+            font-weight: 500;
+            
+            
+        }
+        img{
+            height: 300px;
+            // display: flex;
+            // justify-content: center;
+
+        }
+        
+
+    }
+}

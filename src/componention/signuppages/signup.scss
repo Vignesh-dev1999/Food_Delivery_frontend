@@ -1,0 +1,141 @@
+.n {
+
+    .signup {
+        background-image: url("https://images.creativemarket.com/0.1.0/ps/3697754/1820/1213/m1/fpnw/wm1/p1hmcmuq12mudyu3rcl25sw529wgp9nijndqae6vdzezw2hwk5epxrfjut6opsly-.jpg?1512594315&s=bef394142f0f7764d2eded2d981f9c38");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: justify;
+        height: 100vh;
+        display: flex;
+        padding-left: 500px;
+        padding-top: 200PX;
+        // flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        // width: 300px;
+
+        font-weight: 500;
+
+        .border {
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            // text-align: justify;
+            margin: 10px 10px;
+            width: 400px;
+            padding: 30px;
+            background-color: rgba(90, 78, 78, 0.256);
+            border-radius: 40px;
+            font-weight: 700;
+            color: rgb(27, 21, 21);
+
+
+            h5 {
+                font-size: x-large;
+                margin: 0;
+                text-align: center;
+                font-weight: 700;
+
+
+            }
+
+            .names {
+                display: flex;
+                gap: 10px;
+
+                #name {
+                    // padding-left: 20;
+                    // font-size: small;
+                    // border-width: 3px;
+                    border-radius: 6px;
+                }
+            }
+
+            .Email {
+                display: flex;
+                gap: 10px;
+                #email {
+                    border-radius: 6px;
+
+                }
+            }
+
+            .password {
+                display: flex;
+                gap: 10px;
+                #password {
+                    border-radius: 6px;
+                }
+            }
+
+            .address {
+                display: flex;
+                gap: 10px;
+                #address {
+                    border-radius: 6px;
+
+                }
+            }
+
+            .phonenum {
+                display: flex;
+                gap: 10px;
+                #phonenum {
+                    border-radius: 6px;
+
+                }
+            }
+
+            .submit {
+                // font-size: xx-large;
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+                // align-items: center;
+                // margin: 10px 10px;
+                margin: 0;
+                padding: 5px 5px;
+                
+
+                button {
+                    width: 80px;
+                    height: 30px;
+                    background-color: rgba(144, 132, 132, 0.355);
+                    border-radius: 20px;
+                    padding: 4px 10px;
+                    margin: 10px 10px;
+                    border-radius: 10px;
+                    color: rgba(255, 255, 255, 0.77);
+                    font-weight: 500;
+                    border: 1px solid black;
+                    
+                    
+                }
+                button:hover{
+                    background-color: rgb(21, 21, 20);
+                }
+                
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+}

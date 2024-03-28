@@ -1,0 +1,28 @@
+.orders {
+    height: 100%;
+    // background-image: url("../../images/aaaaa.jpg");
+    // background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+            font-weight: 600;
+            text-align: center;
+
+            // margin: 0%;
+
+        }
+        img {
+            height: 300px;
+
+        }
+
+    }
+}

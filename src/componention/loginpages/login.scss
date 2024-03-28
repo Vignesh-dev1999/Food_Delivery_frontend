@@ -1,0 +1,97 @@
+.na {
+    // .ba{
+
+    //     opacity: 0.9;
+    // }
+    .login {
+        background-image: url("https://img.freepik.com/free-photo/healthy-vegetables-dryfruits-oil-raw-fish-wooden-table_23-2148026882.jpg?t=st=1711570191~exp=1711573791~hmac=6f0965f8cc75ee0c55fdfad857dd1fe2bb2cc3a81edb6336e0a6fcad60536397&w=1060");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+
+        align-items: center;
+        padding-left: 160px;
+        padding-top: 9px;
+        // margin: 0;
+        // padding-top: 10px;
+
+        gap: 10px;
+        text-align: justify;
+        // margin: 10px 10px;
+
+        .borders {
+            background-color: rgba(205, 85, 41, 0.564);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px;
+            border-radius: 40px;
+            border-radius: 40px;
+            margin: 30px 30px;
+            font-weight: 600;
+
+            .Name {
+                display: flex;
+                gap: 10px;
+
+                #em {
+                    border-radius: 6px;
+                }
+            }
+
+            .password {
+                display: flex;
+                gap: 10px;
+
+                #pass {
+                    border-radius: 6px;
+                }
+            }
+
+            h5 {
+                text-align: center;
+                font-size: x-large;
+                margin: 0;
+
+
+            }
+
+            .submits {
+
+                gap: 50px;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                padding-top: 5px;
+                // margin: 0;
+
+
+                button {
+                    width: 80px;
+                    height: 20;
+                    background-color: rgba(30, 28, 28, 0);
+                    border-radius: 20px;
+                    margin: 8px 10px;
+                    padding: 5px 5px;
+                    font-weight: 600;
+                    border: 1px solid black;
+
+
+
+                }
+                button:hover{
+                    background-color: wheat;
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+}

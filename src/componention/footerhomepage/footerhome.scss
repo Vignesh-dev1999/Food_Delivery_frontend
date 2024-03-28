@@ -1,0 +1,82 @@
+.footer {
+    background-color: rgb(148, 161, 161);
+    // height: 200px;   
+    // margin: 0 ;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    height: 50vh;
+    gap: 70px;
+
+
+
+    .company {
+        // width: 90%;
+        // padding: 0 40px;
+        // margin: 0;
+        font-style: italic;
+        padding-top: 30px;
+
+        h4 {
+            font-size: large;
+            font-weight: 700;
+        }
+    }
+
+    .contact {
+        font-style: italic;
+        padding-top: 30px;
+
+        h4 {
+            font-size: large;
+            font-weight: 700;
+        }
+    }
+
+    .We {
+        font-style: italic;
+        padding-top: 30px;
+
+        h4 {
+            font-size: large;
+            font-weight: 700;
+        }
+    }
+
+
+    .Legal {
+        font-style: italic;
+        padding-top: 30px;
+
+        h4 {
+
+            font-size: large;
+            font-weight: 700;
+        }
+    }
+
+    .logo {
+        height: 80px;
+        width: 200px;
+
+        // padding-top: 10px;
+        img {
+            height: 100%;
+
+        }
+
+        p {
+            margin: 0;
+        }
+        .icon{
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding-top: 10px;
+        }
+    }
+
+}

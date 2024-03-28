@@ -1,0 +1,57 @@
+.navbar {
+    height: 10vh;
+    background-color: rgba(200, 191, 191, 0.477);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // opacity: 0.2;
+    // padding: 0% 50px 0% 30px;
+    // background-color: rgba(39, 57, 46, 0.5);
+
+   .logo{
+    height: 50px;
+    img{
+        height: 100%;
+        // margin: 0%;
+        
+        // width: 100px;
+        // padding-top: 10px;
+        
+        padding-left: 60px;
+        // margin-left: 0%;
+        
+
+    }
+   }
+    .icons{
+        padding-left: 20px;
+        font-size:60px;
+        // height: 10vh;
+    }
+
+    h6 {
+        margin: 0%;
+        font-size: x-large;
+    }
+
+
+
+    .navbar-list {
+        padding-right: 50px;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0%;
+            font-style: italic;
+            font-weight: 700;
+
+        }
+
+        .icon {
+            color: rgb(56, 60, 63);
+            font-size: xx-large;
+        }
+    }
+}
