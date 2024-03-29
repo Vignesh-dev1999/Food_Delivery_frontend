@@ -63,7 +63,7 @@ function Seller(){
                 <input type="number" id='st' name='productstack' onChange={handleChange}></input>
             </div>
             <div className='but'>
-                <button onClick={handlesubmit}>ubmit</button>
+                <button onClick={handlesubmit}>Submit</button>
             </div>
 
         </div>
