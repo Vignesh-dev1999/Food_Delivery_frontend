@@ -27,6 +27,7 @@ import Cart from './componention/cart/cart';
 // import { Provider } from 'react-redux';
 import Kfc from "./componention/kfclist/kfc"
 import MainLayout from './componention/layout/MainLayout';
+import Addrestaurant from './componention/sellerrestaurant/addrestaurant';
 
 function App() {
 
@@ -101,6 +102,10 @@ function App() {
         {
           path: "viewAllProducts",
           element: <View />
+        },
+        {
+          path:"addrestaurant",
+          element:<Addrestaurant/>
         }
       ]
     },

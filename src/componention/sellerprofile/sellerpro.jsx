@@ -5,6 +5,11 @@ function SELLERPRO() {
     return (
         <div className="pro">
             <div className="pr">
+
+                <Link to="addrestaurant">
+                
+               <p>Add Retaurant</p> 
+                </Link>
                 <Link to="/seller">
                     <p>Add Product</p>
                 </Link>

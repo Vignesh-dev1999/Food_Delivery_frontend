@@ -5,8 +5,43 @@ import imgss from "../../images/FREE_DELIVERY_POST_TEMPLATE__1_-removebg-preview
 import kfc from "../../images/kfcpay.avif"
 import veg from "../../images/vegkfc.png"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import useRazorpay from "react-razorpay";
 
 function Cart() {
+
+    const [Razorpay]=useRazorpay();
+
+    const handlepay=()=>{
+        const options = {
+            key: "rzp_test_JRDQQlHCv2mRdq", 
+            amount: "50000", 
+            currency: "INR",
+            name: "Acme Corp",
+            description: "Test Transaction",
+            image: "https://example.com/your_logo",
+            // order_id: "order_9A33XWu170gUtm",
+            handler: function (response) {
+              alert(response.razorpay_payment_id);
+              alert(response.razorpay_order_id);
+              alert(response.razorpay_signature);
+            },
+            prefill: {
+              name: "Piyush Garg",
+              email: "youremail@example.com",
+              contact: "9999999999",
+            },
+            notes: {
+              address: "Razorpay Corporate Office",
+            },
+            theme: {
+              color: "#3399cc",
+            },
+          };
+          const rzpay = new Razorpay(options);
+          rzpay.open()
+    }
+
+
     return (
 
         <div className='navbar'>
@@ -142,7 +177,7 @@ function Cart() {
                             <h5>₹338</h5>
                         </div>
                         <div className='paynow'>
-                            <button>PAY NOW</button>
+                            <button onClick={handlepay}>PAY NOW</button>
                         </div>
                     </div>
 

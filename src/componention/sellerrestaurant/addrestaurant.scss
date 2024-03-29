@@ -1,0 +1,69 @@
+.alls {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+   
+    height: 100vh;
+    padding: 30px 30px;
+
+    .ment {
+
+        .a {
+
+            h5 {
+                display: flex;
+                justify-content: center;
+
+
+            }
+        }
+
+
+        .min {
+
+            height: 200px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: rgba(184, 223, 246, 0.796);
+            font-weight: 500;
+
+            .rname{
+                display: flex;
+                gap: 10px;
+                #rn{
+                    border-radius: 5px;
+                }
+            }
+            .pname{
+                display: flex;
+                gap: 10px;
+                #pn{
+                    border-radius: 5px;
+                }
+            }
+
+            .but {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    background-color: rgb(212, 219, 225);
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+
+                }
+            }
+        }
+    }
+}

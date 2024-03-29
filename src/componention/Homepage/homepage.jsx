@@ -13,7 +13,7 @@ import Footer from '../footerhomepage/footerhome';
 // import Kfc from '../kfclist/kfc'
 // import Cart from '../cart/cart';
 import SellerLayout from '../sellerLayout/SellerLayout';
-import Paynow from '../paypayment/paynow';
+import Addrestaurant from '../sellerrestaurant/addrestaurant';
 
 function Home() {
 
@@ -31,7 +31,7 @@ function Home() {
             <Footer />
             {/* <Kfc/>  */}
             <SellerLayout />
-            <Paynow/>
+            <Addrestaurant/>
 
 
 

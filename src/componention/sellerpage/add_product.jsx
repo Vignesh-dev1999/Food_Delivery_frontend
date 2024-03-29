@@ -39,7 +39,7 @@ function Seller(){
 
         <div className="in">
             <div className="rname">
-                <label>Restarent Name : </label>
+                <label>Restaurant Name : </label>
                 <input type="name" id='rn' name="restarentname" onChange={handleChange}></input>
             </div>
             <div className="pname">
