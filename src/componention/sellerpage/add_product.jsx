@@ -9,6 +9,8 @@ function Seller() {
     const navigate = useNavigate()
     const [productlist, setproduct] = useState({
         restarentname: "",
+        productcategory:"",
+        productsubcategory:"",
         productname: "",
         productid: "",
         productdetails: "",
@@ -58,6 +60,14 @@ function Seller() {
                     <div className="rname">
                         <label>Restaurant Name : </label>
                         <input type="name" id='rn' name="restarentname" onChange={handleChange}></input>
+                    </div>
+                    <div className="pname">
+                        <label>Product Category : </label>
+                        <input type="pmane" id='pn' name="productcategory" onChange={handleChange}></input>
+                    </div>
+                    <div className="pname">
+                        <label>Product Subcategory : </label>
+                        <input type="pmane" id='pn' name="productsubcategory" onChange={handleChange}></input>
                     </div>
                     <div className="pname">
                         <label>Product Name : </label>
