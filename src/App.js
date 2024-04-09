@@ -23,8 +23,8 @@ import SellerLayout from './componention/sellerLayout/SellerLayout';
 import Seller from './componention/sellerpage/add_product';
 import View from './componention/sellerviewproduct/sellerview';
 import Cart from './componention/cart/cart';
-// import cartstore from './componention/redux/cartstore';
-// import { Provider } from 'react-redux';
+import cartstore from './componention/redux/cartstore';
+import { Provider } from 'react-redux';
 import Kfc from "./componention/kfclist/kfc"
 import MainLayout from './componention/layout/MainLayout';
 import Addrestaurant from './componention/sellerrestaurant/addrestaurant';
@@ -34,7 +34,7 @@ function App() {
   const route = createBrowserRouter([
     {
       path: "/",
-      element:<MainLayout/>,
+      element: <MainLayout />,
       children: [
         {
           path: "",
@@ -80,14 +80,14 @@ function App() {
         },
       ]
     },
-    
+
     {
 
       path: "/cart",
       element: <Cart />
 
     },
-    
+
 
 
 
@@ -104,8 +104,8 @@ function App() {
           element: <View />
         },
         {
-          path:"addrestaurant",
-          element:<Addrestaurant/>
+          path: "addrestaurant",
+          element: <Addrestaurant />
         }
       ]
     },
@@ -123,9 +123,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
       </Routes>
       </BrowserRouter> */}
-      {/* <Provider cartstore={cartstore}> */}
-      <RouterProvider router={route} />
-      {/* </Provider> */}
+      <Provider store={cartstore}>
+        <RouterProvider router={route} />
+      </Provider>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Navbar from "../navbar/navbar";
 import { Link } from "react-router-dom"
 import img from "../../images/kfclist.avif"
 import burger from "../../images/listbur.avif"
+import { addcart } from "../redux/cartslice";
+import { useDispatch } from 'react-redux';
 
 const kfc = [
     {
@@ -35,10 +37,13 @@ const kfc = [
 
 ]
 function Kfc() {
+
+  
+    const dispatch = useDispatch();
     return (
         <div className="na">
 
-           
+
             <div className="d">
                 <div className="a">
                     <div className="kfc">
@@ -85,7 +90,7 @@ function Kfc() {
                                     <div className="header">
                                         {/* <img src={data.image} alt="" /> */}
                                         <button id="myImg" style={{ backgroundImage: `url(${data.image})` }}></button>
-                                        <button id="addBtn">ADD</button>
+                                        {/* <button id="addBtn" onClick={() => dispatch(addcart(data))}>ADD</button> */}
                                     </div>
 
                                 </div>

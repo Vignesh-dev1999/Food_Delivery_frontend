@@ -1,0 +1,21 @@
+version : 0.2
+phases:
+   install:
+      commands:
+          - echo "depentancies installing"
+          - sudo apt-get update
+          - sudo apt-get install nodejs -y
+          - node --version
+    build:
+      commands:
+          - echo "code build running" 
+          - node build 
+
+    post_build:
+      commands:
+          - echo "transfering the file to s3"
+          - aws s3 cp . s3://<bucket name>/
+
+artifacts:
+  files:
+    - '**/*'

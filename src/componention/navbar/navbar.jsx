@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import NoFoodIcon from '@mui/icons-material/NoFood';
 // import imgs from "../../images/wepik-export-20240306121500IXzB.png"
-
+import {
+    selectcart
+} from "../redux/cartslice";
+import { useSelector } from 'react-redux';
 import imgss from "../../images/FREE_DELIVERY_POST_TEMPLATE__1_-removebg-preview.png"
 
 function Navbar() {
-
+    const carts = useSelector(selectcart);
+    console.log(carts);
     const [cart, setcart ] =useState(0)
     return <div className="navbar">
         <div className="logo">
