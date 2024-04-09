@@ -39,30 +39,15 @@ function Seller() {
         if (file) {
             const reader = new FileReader();
             reader.onloadend = () => {
-                // When the reader has finished reading the file, set the image source to the Base64 string
                 setImageSrc(reader.result);
+                const base64String = reader.result;
+                console.log(base64String);
+                // When the reader has finished reading the file, set the image source to the Base64 string
             };
             reader.readAsDataURL(file); // Read the file as a Data URL (Base64-encoded string)
         }
-convertImageToBase64(file)
 
     }
-    function convertImageToBase64(file, callback) {
-        // console.log('hello ,'+ file);
-        // callback();
-        const reader = new FileReader();
-
-        reader.onloadend = function () {
-            // Convert the image to Base64 string
-            const base64String = reader.result;
-            let image_str = toString(base64String);
-            console.log(image_str);
-            // callback(base64String);
-        };
-
-        reader.readAsDataURL(file);
-    }
-
 
     return (
         <div className="seller">
