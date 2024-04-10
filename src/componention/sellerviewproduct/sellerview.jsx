@@ -13,7 +13,7 @@ function View() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("http://localhost:3001/p");
+            const response = await axios.get("http://localhost:5000/products/getAllProducts");
             console.log(response.data);
             setViewAll([...response.data]);
         } catch (error) {

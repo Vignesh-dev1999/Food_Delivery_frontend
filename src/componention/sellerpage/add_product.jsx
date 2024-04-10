@@ -26,7 +26,7 @@ function Seller() {
     const handlesubmit = async () => {
         console.log(productlist);
 
-        const response = await axios.post("http://localhost:3001/p", productlist)
+        const response = await axios.post("http://localhost:5000/products/addProduct", productlist)
         console.log(response.data)
 
 

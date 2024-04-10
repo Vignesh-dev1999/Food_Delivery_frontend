@@ -30,12 +30,23 @@ function Login() {
         // }).then(data => data.json())
         // .then(re=>console.log(re))
 
-        const response = await axios.post("", userDatails)
+        const response = await axios.post("http://localhost:5000/user/login", userDatails)
         console.log(response)
+        // .then(res => {
+            if(response.data.result === "success"){
+                if(response.data.role === "admin"){
+                    navigate("/seller")
+                }else{
+                    navigate("/")
+                }
+            }
+            
 
-        if(response.status === 200){
+        // }).catch(err => console.log(err))
 
-        }
+        // if(response.status === 200){
+
+        // }
     }
     return(
             <div className="na">
@@ -52,8 +63,9 @@ function Login() {
                     <input type="password" id="pass" name="password" onChange={handleChange}/>
                 </div>
                 <div className="submits">
-                    <Link to="/">
-                    <button onClick={handleSubmit}>Log in</button></Link>
+                    {/* <Link to="/"> */}
+                    <button onClick={handleSubmit}>Log in</button>
+                    {/* </Link> */}
                    <Link to ='/register'><button>Sign up</button></Link>
                 </div>
             </div>

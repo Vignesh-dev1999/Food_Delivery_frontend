@@ -28,6 +28,7 @@ import { Provider } from 'react-redux';
 import Kfc from "./componention/kfclist/kfc"
 import MainLayout from './componention/layout/MainLayout';
 import Addrestaurant from './componention/sellerrestaurant/addrestaurant';
+import SELLERPRO from './componention/sellerprofile/sellerpro';
 
 function App() {
 
@@ -87,7 +88,7 @@ function App() {
       element: <Cart />
 
     },
-
+    
 
 
 
