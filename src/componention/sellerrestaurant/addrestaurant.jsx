@@ -18,7 +18,7 @@ function Addrestaurant() {
     const handlesubmit = async () => {
         console.log(restaurant)
 
-        const respons =await axios.post("http://localhost:3001/r", restaurant)
+        const respons =await axios.post("http://localhost:3001/restaurant", restaurant)
         console.log(respons.data)
 
         if(respons.status === 200){

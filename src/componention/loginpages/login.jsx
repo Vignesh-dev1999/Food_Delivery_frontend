@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./login.scss"
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../navbar/navbar";
+// import Navbar from "../navbar/navbar";
 
 function Login() {
     const navigate = useNavigate()
@@ -32,21 +32,17 @@ function Login() {
 
         const response = await axios.post("http://localhost:5000/user/login", userDatails)
         console.log(response)
-        // .then(res => {
+      
             if(response.data.result === "success"){
-                if(response.data.role === "admin"){
-                    navigate("/seller")
-                }else{
+                if(response.data.role === "user"){
                     navigate("/")
+                }else{
+                    alert("err")
                 }
             }
             
 
-        // }).catch(err => console.log(err))
-
-        // if(response.status === 200){
-
-        // }
+        
     }
     return(
             <div className="na">

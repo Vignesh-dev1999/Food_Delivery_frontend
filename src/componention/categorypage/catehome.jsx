@@ -12,117 +12,131 @@ import StarIcon from '@mui/icons-material/Star';
 
 import './catehome.scss'
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react"
+import axios from "axios"
 function Category() {
 
-const cartdata =[
-    {
-        name:"KFC",
-        image:kfc1,
-        offer:"₹20% OFF UPTO ₹50",
-        star:"4.2 . 15-20 mins",
-        data:"Biryani, America"
+    const cartdata = [
+        {
+            name: "KFC",
+            image: kfc1,
+            offer: "₹20% OFF UPTO ₹50",
+            star: "4.2 . 15-20 mins",
+            data: "Biryani, America"
 
-        
 
-    },
-    {
-        name:"Domino's",
-        image:dominos,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.3 . 30min",
-        data:"Pizzas,italian,pastas"
 
-        
+        },
+        {
+            name: "Domino's",
+            image: dominos,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.3 . 30min",
+            data: "Pizzas,italian,pastas"
 
-    },
-    {   
-        name:"Hyderabad Biriyani",
-        image:biriyani,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.3 . 25-30min",
-        data:"Hyderabad Biriyani"
-  
 
-    },
-    {
-        name:"MC Donald's",
-        image:MCDonald,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.3 . 25-30min",
-        data:"Burgers, Beverages"
-    },
-    {
-        name:"SS Hyderabad Briyani",
-        image:ss,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.6 . 25-30min",
-        data:"Biryani, South Indian"
-    },
-    {
-        name:"Meat And Eat",
-        image:ME,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.2 . 25-30min",
-        data:"Beverages"
-    },
-    {
-        name:"Chai Kings",
-        image:chai,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.2 . 25-30min",
-        data:"Beverages, Snacks"
-    },
-    {
-        name:"Cafe Coffee Day",
-        image:cafe,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.2 . 25-30min",
-        data:"Beverages, Cafe"
-    },
-    {
-        name:"The Red Box",
-        image:red,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.2 . 25-30min",
-        data:"Chinese"
-    },
-    {
-        name:"Boomerang",
-        image:boom,
-        offer:"₹125 OFF ABOVE ₹199",
-        star:"4.2 . 25-30min",
-        data:"Ice Cream, Desserts"
+
+        },
+        {
+            name: "Hyderabad Biriyani",
+            image: biriyani,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.3 . 25-30min",
+            data: "Hyderabad Biriyani"
+
+
+        },
+        {
+            name: "MC Donald's",
+            image: MCDonald,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.3 . 25-30min",
+            data: "Burgers, Beverages"
+        },
+        {
+            name: "SS Hyderabad Briyani",
+            image: ss,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.6 . 25-30min",
+            data: "Biryani, South Indian"
+        },
+        {
+            name: "Meat And Eat",
+            image: ME,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.2 . 25-30min",
+            data: "Beverages"
+        },
+        {
+            name: "Chai Kings",
+            image: chai,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.2 . 25-30min",
+            data: "Beverages, Snacks"
+        },
+        {
+            name: "Cafe Coffee Day",
+            image: cafe,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.2 . 25-30min",
+            data: "Beverages, Cafe"
+        },
+        {
+            name: "The Red Box",
+            image: red,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.2 . 25-30min",
+            data: "Chinese"
+        },
+        {
+            name: "Boomerang",
+            image: boom,
+            offer: "₹125 OFF ABOVE ₹199",
+            star: "4.2 . 25-30min",
+            data: "Ice Cream, Desserts"
+        }
+    ]
+
+    const [restaurantData, setRestaurantData] = useState([])
+
+    useEffect(()=>{
+        getDatas()
+    },[])
+
+    const getDatas = async () => {
+        const res = await axios.get("http://localhost:5000/restaurant/getallrestaurant")
+        setRestaurantData(res.data)
     }
-]
+
     return (
-       
+
         <div className="product-card">
-            { cartdata.map((data, index)=>(
+            {restaurantData.map((data, index) => (
                 <Link to="/kfc">
-                  <div className="data"  key={index}>
-                  <div className="header">
-                      <img src={data.image} alt="" />
-                      <h2>{data.offer}</h2>
-                  </div>
-                  <div className="content">
-                      <h3>{data.name}</h3>
-                      <div className="rating">
-  
-                          <div className="star">
-                          <span class="fa fa-star checked"></span> <span >{data.star}</span>
-                          </div>
-                         
-                      </div>
-                  </div>
-                  <p>{data.data}</p>
-              </div>
-              </Link>
-            ))   }
-          <div className="all">
-            <button>Show more</button>
-          </div>
+                    <div className="data" key={index}>
+                        <div className="header">
+                            <img src={data.image} alt="" />
+                            <h2>{data.offer}</h2>
+                        </div>
+                        <div className="content">
+                            <h3>{data.restaurant_Name}</h3>
+                            <div className="rating">
+
+                                <div className="star">
+                                    <span class="fa fa-star checked"></span> <span >{data.rating}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p>{data.popularDishs.map((subData,subIndex)=>(<span key={subIndex}>{subData}</span>))}</p>
+                    </div>
+                </Link>
+            ))}
+            <div className="all">
+                <button>Show more</button>
+            </div>
         </div>
-        
+
     )
 }
 

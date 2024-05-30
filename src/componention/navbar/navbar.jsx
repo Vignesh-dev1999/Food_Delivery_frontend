@@ -8,34 +8,43 @@ import {
     selectcart
 } from "../redux/cartslice";
 import { useSelector } from 'react-redux';
-import imgss from "../../images/FREE_DELIVERY_POST_TEMPLATE__1_-removebg-preview.png"
+import imgss from "../../images/logoo-removebg-previewOO.png"
 
 function Navbar() {
     const carts = useSelector(selectcart);
     console.log(carts);
-    const [cart, setcart ] =useState(0)
+    const [cart, setcart] = useState(0)
     return <div className="navbar">
+
+
         <div className="logo">
-        <Link to="/">
-            {/* <NoFoodIcon className="icons" /> */}
-            <img  src={imgss}/>
-        </Link>
+            <Link to="/">
+                {/* <NoFoodIcon className="icons" /> */}
+                <img src={imgss} />
+
+            </Link>
+            <p >𝓐𝓹𝓹𝓾 </p>
+          
+            <p className="ap">𝓓𝓮𝓵𝓲𝓿𝓮𝓻𝔂</p>
         </div>
+
+        {/* <div className="appu"> <p>sda</p></div> */}
         <div className="navbar-list">
             <Link to="/">
+
                 <p>Home</p>
 
             </Link>
             <Link to="/profile">
-            <p>Orders</p>
+                <p>Orders</p>
             </Link>
-            <Link to= "/login">
+            <Link to="/login">
 
-            <p>Sign In</p>
+                <p>Sign In</p>
             </Link>
             <Link to="/cart">
-            <p> {cart} Cart</p>
-            
+                <p> {cart} Cart</p>
+
             </Link>
             {/* <p>Profile</p> */}
             <Link to="/profile">

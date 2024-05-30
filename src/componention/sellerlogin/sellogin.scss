@@ -1,17 +1,13 @@
-.na {
-    // .ba{
-
-    //     opacity: 0.9;
-    // }
+.sellerlogin{
     .login {
-        background-image: url("https://img.freepik.com/free-photo/creative-black-friday-composition-with-copy-space_23-2148665642.jpg?t=st=1712818923~exp=1712822523~hmac=9f90acbcdf7f7b224fb86689f818fb94658eb8b6e7bd4f05f52923cd48a51052&w=1060");
+        background-image: url("https://img.freepik.com/free-photo/shopping-cart-miniature_23-2148081068.jpg?t=st=1712819908~exp=1712823508~hmac=3d44429fe34e251a6c9ce42936dedd227539f7a803b1c7da5fe5ee7e4d0bf890&w=996");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         display: flex;
 
         align-items: center;
-        padding-left: 800px;
+        padding-left: 160px;
         padding-top: 9px;
         // margin: 0;
         // padding-top: 10px;
@@ -21,35 +17,37 @@
         // margin: 10px 10px;
 
         .borders {
-            background-color: rgba(23, 10, 10, 0.064);
-            // transition-behavior: 0,4;
+            background-color: rgba(32, 67, 70, 0.052);
             display: flex;
             flex-direction: column;
             gap: 10px;
             padding: 40px;
+            
             border-radius: 40px;
-            border-radius: 40px;
+            border: 2px solid black;
+        
             margin: 30px 30px;
             font-weight: 600;
-            color: rgb(248, 241, 232);
+            // border-radius: 40px solid black;
 
             .Name {
                 display: flex;
                 gap: 10px;
-
+                font-weight: 600;
+                color: black;
                 #em {
                     border-radius: 6px;
-                    color: black;
                 }
             }
 
             .password {
                 display: flex;
                 gap: 10px;
+                font-weight: 600;
+                color: black;
 
                 #pass {
                     border-radius: 6px;
-                    color: black;
                 }
             }
 
@@ -80,12 +78,13 @@
                     padding: 5px 5px;
                     font-weight: 600;
                     border: 1px solid black;
+                    color: black;   
 
 
 
                 }
                 button:hover{
-                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(251, 250, 251, 0.916);
                 }
 
             }
@@ -95,7 +94,4 @@
 
 
     }
-
-
-
 }

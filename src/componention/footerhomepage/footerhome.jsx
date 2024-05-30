@@ -4,6 +4,7 @@ import insta from "../../images/instagram_6422200.png"
 import phone from "../../images/circle-phone_8034062.png"
 import loc from "../../images/locations.png"
 import imgs from "../../images/FREE_DELIVERY_POST_TEMPLATE__1_-removebg-preview.png"
+import { Link } from "react-router-dom"
 function Footer() {
     return (
 
@@ -30,7 +31,9 @@ function Footer() {
             <div className="contact">
                 <h4>Contact us</h4>
                 <p>Help & Support</p>
+                <Link to="/sellerlogin">
                 <p>Partner with us</p>
+                </Link>
                 <p>Ride with us</p>
             </div>
             <div className="We">

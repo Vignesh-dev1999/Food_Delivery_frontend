@@ -1,14 +1,13 @@
-.n {
-
+.sellersignup {
     .signup {
-        background-image: url("https://img.freepik.com/free-photo/shopping-bag-cart_23-2148879372.jpg?t=st=1712819051~exp=1712822651~hmac=f2db916a78b1388468256b0874015d04bf2a36ca0a1229cf419985017467dfa9&w=1060");
+        background-image: url("https://img.freepik.com/free-photo/security-sign-log-up-password-secret-concept_53876-133565.jpg?t=st=1712818494~exp=1712822094~hmac=915e296e22f8706e21bc543c467e33e35c670a1c2cd5249cc798d4df088663e4&w=826");
         background-repeat: no-repeat;
         background-size: cover;
         text-align: justify;
         height: 100vh;
         display: flex;
-        padding-left: 300px;
-        padding-top: 100PX;
+        padding-left: 500px;
+        padding-top: 200PX;
         // flex-direction: column;
         // justify-content: center;
         align-items: center;
@@ -25,8 +24,7 @@
             margin: 10px 10px;
             width: 400px;
             padding: 30px;
-            // background-color: rgba(90, 78, 78, 0.256);
-            background-color: rgba(126, 175, 190, 0.112);
+            background-color: rgba(90, 78, 78, 0.256);
             border-radius: 40px;
             font-weight: 700;
             color: rgb(27, 21, 21);
@@ -106,20 +104,20 @@
                 button {
                     width: 80px;
                     height: 30px;
-                    background-color: rgba(126, 175, 190, 0.112);
+                    background-color: rgba(144, 132, 132, 0.355);
                     border-radius: 20px;
                     padding: 4px 10px;
                     margin: 10px 10px;
                     border-radius: 10px;
-                    color: rgba(0, 0, 0, 0.77);
-                    font-weight: 600;
-                    border: 1px solid rgb(5, 5, 5);
+                    color: rgba(255, 255, 255, 0.77);
+                    font-weight: 500;
+                    border: 1px solid black;
 
 
                 }
 
                 button:hover {
-                    background-color: rgb(254, 254, 248);
+                    background-color: rgb(21, 21, 20);
                 }
 
 
@@ -142,6 +140,4 @@
 
 
     }
-
-
 }

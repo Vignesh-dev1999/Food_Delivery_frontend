@@ -12,8 +12,10 @@ import Mind from '../foodlistpage/foodlisth';
 import Footer from '../footerhomepage/footerhome';
 // import Kfc from '../kfclist/kfc'
 // import Cart from '../cart/cart';
-import SellerLayout from '../sellerLayout/SellerLayout';
-import Addrestaurant from '../sellerrestaurant/addrestaurant';
+// import SellerLayout from '../sellerLayout/SellerLayout';
+// import Addrestaurant from '../sellerrestaurant/addrestaurant';
+// import Sellerlogin from '../sellerlogin/sellogin'
+// import Sellersignup from '../sellersignup/selsignupp'
 
 function Home() {
 
@@ -30,8 +32,11 @@ function Home() {
 
             <Footer />
             {/* <Kfc/>  */}
-            <SellerLayout />
-            <Addrestaurant/>
+            {/* <SellerLayout /> */}
+            {/* <Addrestaurant/>
+            < Sellerlogin />
+
+            <Sellersignup/> */}
 
 
 

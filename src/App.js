@@ -29,6 +29,8 @@ import Kfc from "./componention/kfclist/kfc"
 import MainLayout from './componention/layout/MainLayout';
 import Addrestaurant from './componention/sellerrestaurant/addrestaurant';
 import SELLERPRO from './componention/sellerprofile/sellerpro';
+import Sellerlogin from './componention/sellerlogin/sellogin';
+import Sellersignup from './componention/sellersignup/selsignupp';
 
 function App() {
 
@@ -88,7 +90,15 @@ function App() {
       element: <Cart />
 
     },
-    
+    {
+      path: "/sellerlogin",
+      element: <Sellerlogin />
+    },
+    {
+      path: "/sellersignup",
+      element: <Sellersignup />
+    },
+
 
 
 
